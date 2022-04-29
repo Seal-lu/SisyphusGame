@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.0.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index/index.css">
+    <link rel="stylesheet" type="text/css" href="js/swiper-bundle.min.css">
+    <script src="js/index/index.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>gameInfo</title>
+</head>
+<body>
+    <header>
+        <h1>Sisyphus</h1>
+        <div>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="search">
+        </div>
+        <div>
+            <span>Login</span>
+            <span>Register</span>
+        </div>
+        <div id="search_res"></div>
+        
+    </header>
+    <div class="banner">
+        <div class="today">
+            <ul id="banner_list"></ul>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper"></div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">
+            <span>Steam促销</span>
+            <p>更多 <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="discount"></div>
+    </div>
+    <div class="recom">
+        <div class="title">
+            <span>安利墙</span>
+            <p>更多 <i class="fa fa-chevron-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="commonets"></div>
+    </div>
+    <div class="classify">
+        <div class="cla">
+            <P class="active">游戏总览</P>
+            <P>最受欢迎</P>
+            <P>最新上架</P>
+            <P>销量</P>
+            <P>价格降序</P>
+            <P>价格升序</P>
+            <P>Steam促销</P>
+        </div>
+        <div class="c_content">
+            <!-- 最受欢迎 -->
+            <div class="commonet ">
+                <img src="" alt="" class="popular bg">
+                <div class="c_name">
+                    <p>最受欢迎</p>
+                    <p>查看全部 <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                </div>
+                <div>
+                    <ul id="popular"></ul>
+                </div>
+            </div>
+            <!-- 最新上架 -->
+            <div class="commonet">
+                <img src="" alt="" class="issue bg">
+                <div class="c_name">
+                    <p>最新上架</p>
+                    <p>查看全部 <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                </div>
+                <div>
+                    <ul id="issue"></ul>
+                </div>
+            </div>
+            <!-- 销量 -->
+            <div class="commonet">
+                <img src="" alt="" class="sales bg">
+                <div class="c_name">
+                    <p>销量</p>
+                    <p>查看全部 <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+                </div>
+                <div>
+                    <ul id="sales"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game_banner">
+        <div id="closer"><i class="fa fa-window-close" aria-hidden="true"></i></div>
+        <div id="game_info">
+            <div id="info_part"></div>
+            <div id="comment_part"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="f_left">
+            <div>
+                <p>Sisyphus</p>
+                <p>关于我们</p>
+                <p>联系我们</p>
+                <p>加入我们</p>
+                <p>开放平台</p>
+            </div>
+            <div>
+                <p>清枫（北京）科技有限公司 2015-2021 © All Rights Reserved.</p>
+                <p>京公网安备11010502034222号 | 京ICP备15018522号-6 | 京网文[2017]8080-895号 | 京ICP证B2-20180020</p>
+                <p>违法和不良信息举报电话：010-84158300　举报邮箱：jubao@xiaoheihe.cn</p>
+            </div>
+        </div>
+        <div class="f_right">
+            <img src="img/android.png" alt="">
+            <img src="img/apple.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,428 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "SourceHanSansCN-Bold";
+}
+
+body {
+  background: #e0dddd;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 0%;
+  width: 100vw;
+  height: 60px;
+  background: #663737;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5%;
+  box-sizing: border-box;
+  align-items: center;
+}
+header div {
+  position: relative;
+}
+header div span {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid white;
+}
+header div span:hover {
+  background: #d4d1d1;
+  color: #663737;
+}
+header div i {
+  position: absolute;
+  color: #663737;
+  top: 8px;
+  left: 10px;
+}
+header div input {
+  border-radius: 15px;
+  width: 300px;
+  padding: 5px 0px 5px 30px;
+}
+header #search_res {
+  display: none;
+  box-sizing: border-box;
+  margin: 0% auto;
+  left: 50%;
+  transform: translate(-50%);
+  top: 60px;
+  position: absolute;
+  width: 50vw;
+  background: white;
+  border-radius: 0px 0px 5px 5px;
+}
+header #search_res li {
+  margin: 20px;
+  color: black;
+}
+header #search_res li span {
+  border: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0px 10px 0px;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+.banner .swiper {
+  width: 55%;
+  height: 300px;
+}
+.banner .swiper img {
+  width: 100%;
+  height: 100%;
+}
+.banner .today {
+  width: 50%;
+}
+.banner .today ul {
+  width: 90%;
+  height: 300px;
+  overflow: auto;
+}
+.banner .today ul li {
+  cursor: pointer;
+  color: white;
+  background: #663737;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px;
+}
+.banner .today ul li img {
+  width: 200px;
+}
+.banner .today ul li .t_info {
+  width: 150px;
+  padding-left: 30px;
+  border-left: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: space-around;
+}
+.banner .today ul li .t_info p {
+  font-size: 20px;
+}
+.banner .today ul li .t_info .cost :first-child {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.banner .today ul li .t_info .cost :last-child {
+  color: #d4d1d1;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.content, .recom, .classify {
+  margin-top: 20px;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+.content .title, .recom .title, .classify .title {
+  padding: 0px 20px;
+  margin: 10px 0px;
+  height: 50px;
+  color: white;
+  background: #663737;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .title p, .recom .title p, .classify .title p {
+  font-size: 12px;
+  cursor: pointer;
+  color: #d4d1d1;
+}
+.content .discount, .recom .discount, .classify .discount {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content .discount div, .recom .discount div, .classify .discount div {
+  color: #663737;
+  position: relative;
+}
+.content .discount div img, .recom .discount div img, .classify .discount div img {
+  width: 250px;
+  border-radius: 5px;
+}
+.content .discount div p, .recom .discount div p, .classify .discount div p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.content .discount div .min, .recom .discount div .min, .classify .discount div .min {
+  position: absolute;
+  right: 0%;
+  font-size: 12px;
+  width: 35px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.63);
+}
+.content .discount div .cost :first-child, .recom .discount div .cost :first-child, .classify .discount div .cost :first-child {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.content .discount div .cost :last-child, .recom .discount div .cost :last-child, .classify .discount div .cost :last-child {
+  color: #857c7c;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.recom .commonets, .classify .commonets, .classify .c_content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+.recom .commonets .commonet, .classify .commonets .commonet, .classify .c_content .commonet {
+  border-radius: 5px;
+  background: white;
+  width: 250px;
+  position: relative;
+}
+.recom .commonets .commonet .bg, .classify .commonets .commonet .bg, .classify .c_content .commonet .bg {
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  width: 100%;
+  height: 100px;
+  filter: brightness(0.5);
+}
+.recom .commonets .commonet .c_name, .classify .commonets .commonet .c_name, .classify .c_content .commonet .c_name {
+  cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+}
+.recom .commonets .commonet .c_name :last-child, .classify .commonets .commonet .c_name :last-child, .classify .c_content .commonet .c_name :last-child {
+  font-size: 12px;
+  color: #d4d1d1;
+}
+.recom .commonets .commonet .comInfo, .classify .commonets .commonet .comInfo, .classify .c_content .commonet .comInfo {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.recom .commonets .commonet .comInfo p, .classify .commonets .commonet .comInfo p, .classify .c_content .commonet .comInfo p {
+  display: -webkit-box;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.recom .commonets .commonet .comInfo div, .classify .commonets .commonet .comInfo div, .classify .c_content .commonet .comInfo div {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recom .commonets .commonet .comInfo div i, .classify .commonets .commonet .comInfo div i, .classify .c_content .commonet .comInfo div i {
+  margin-left: 5px;
+  color: orange;
+  transform: scale(0.8);
+}
+.recom .commonets .commonet li, .classify .commonets .commonet li, .classify .c_content .commonet li {
+  cursor: pointer;
+}
+
+.classify {
+  margin-top: 40px;
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.classify .cla {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.classify .cla p {
+  color: #777373;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+}
+.classify .cla .active {
+  border-bottom: 3px solid #663737;
+  color: #663737;
+}
+.classify .c_content {
+  width: 90%;
+}
+.classify .c_content .commonet {
+  width: 300px;
+  color: black;
+}
+.classify .c_content .commonet .c_name p:last-child {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.classify .c_content .commonet ul {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.game {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.game .p_left {
+  display: flex;
+}
+.game img {
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 100px;
+}
+.game .cost span {
+  font-size: 12px;
+  color: #777373;
+  text-decoration: line-through;
+}
+.game .cost span:first-child {
+  font-size: 16px;
+  color: black;
+  text-decoration: none !important;
+}
+.game #score {
+  padding: 0px 10px;
+  color: white;
+  border-radius: 4px;
+  background: orange;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0%;
+}
+
+#game_banner {
+  z-index: 9999;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 50vw;
+  height: 60vh;
+  background-color: white;
+}
+#game_banner #closer {
+  top: 0%;
+  right: 0%;
+  position: absolute;
+  color: #663737;
+}
+#game_banner #game_info {
+  margin: 20px;
+}
+#game_banner #game_info #info_part {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #663737;
+}
+#game_banner #game_info #info_part #tags {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#game_banner #game_info #info_part #tags P {
+  border-radius: 5px;
+  margin-right: 2px;
+  font-size: 12px;
+  transform: scale(0.8);
+  padding: 3px 5px;
+  color: white;
+  background: #663737;
+}
+#game_banner #game_info #info_part img {
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+footer {
+  color: white;
+  padding: 0px 80px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  background: #663737;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  width: 150px;
+}
+footer .f_left div:first-child {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+}
+footer .f_left div:first-child p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .f_left div:last-child {
+  font-size: 12px;
+  color: #d4d1d1;
+}
+footer .f_right {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "SourceHanSansCN-Bold";
+  src: url("../../fontFamliy/SourceHanSansCN-Medium.55379b93.woff");
+}/*# sourceMappingURL=index.css.map */
